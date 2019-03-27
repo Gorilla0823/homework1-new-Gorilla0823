@@ -5,37 +5,40 @@ body, html {
   color: #777;
 }
 body{
-	padding-bottom: 50px;
 	background-color: #666666;
 }
 nav {
   max-width: 960px;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-   position: absolute;
-    top: 30px;
-    right:0;
+  position: absolute;
+  top: 30px;
+  right: 10px;
 }
-nav ul li {
-  display: inline-block;
+nav ul{
+     display: flex;
+     list-style-type:none;
 }
 
 nav ul li a {
-  padding: 18px;
-  font-family: "Open Sans";
+  padding: 20px;
+  margin-right:10px;
+  border: 2px solid black;
+  -webkit-border-radius: 50px ;
+  -moz-border-radius: 50px;
+  border-radius: 50px ;
+  font-family: "Lato";
   text-transform:uppercase;
   color:black;
   font-weight:bold;
   font-size: 18px;
   text-decoration: none;
-
 }
 
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   color: rgba(0, 35, 122, 0.7);
 }
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  display: flex;
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -44,16 +47,10 @@ nav ul li a:hover {
   background-size: cover;
 }
 .bgimg-1 {
+  display:flex;
   background-image: url("https://images.pexels.com/photos/208805/pexels-photo-208805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   min-height: 100%;
 }
-.bgimg-1 a{
-	border: 1.5px solid black;
-	-webkit-border-radius: 50px ;
-	-moz-border-radius: 50px;
-	border-radius: 50px ;
-}
-
 .bgimg-2 {
   background-image: url("https://images.pexels.com/photos/674570/pexels-photo-674570.jpeg?cs=srgb&dl=adorable-animal-cat-674570.jpg&fm=jpg");
   min-height: 400px;
@@ -90,14 +87,14 @@ h3 {
   font: 30px "Lato", sans-serif;
   color: #111;
 }
-p{
+p {
 	margin:20px 0 20px 0;
     font-family:'Source Sans Pro',sans-serif;
     font-size:18px;
 	color:rgb(51, 51, 51);
 	line-height: 32px;
 }
-@media only screen and (max-device-width: 1080px) {
+@media only screen and (max-device-width: 1020px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
   }
@@ -109,20 +106,28 @@ p{
  	font-size:72px;
  	font-style: italic;
 }
+.container{
+  height:300px;
+  display:flex;
+  justify-content:center;
+   padding-right: 5px;
+}
+
 .fling-minislide {
-	padding-left: 40px;
-	width:350px; 
+	width:305px; 
 	height:300px; 
 	overflow:hidden; 
 	position:relative; 
-	float:right;
+	padding-left: 20px;
 }
 .fling-minislide img{ 
+  display:flex;
 	position:absolute;
 	animation:fling-minislide 10s infinite; 
 	opacity:0; 
-	width: 100%; 
-	height: auto;
+  max-width:280px;
+  height:250px;
+  border:5px solid white;
 }
 @keyframes fling-minislide {
 	25%{opacity:1;} 
@@ -142,7 +147,8 @@ p{
 }
 footer{
 	background-color: #666666;
-	text-align: center;
+  display:flex;
+  justify-content: center;
 	height: 50px;
 　	position: relative;
 　	margin-top: -50px;
@@ -160,7 +166,7 @@ footer h1{
   z-index: 99;
   border: none;
   outline: none;
-  background-color: gray;
+  background-color: black;
   color: white;
   cursor: pointer;
   padding: 10px;
