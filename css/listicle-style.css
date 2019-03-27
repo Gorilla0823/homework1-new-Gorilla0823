@@ -26,9 +26,11 @@ header{
   	text-align: center;
 }
 .profileimage{
-    border-radius: 50%;
-    height:100px;
-    margin-top:-50px;
+    border-radius: 100%;
+    height:98px;
+    margin-top:-51px;
+    margin-bottom:-5px;
+    border:solid 1px white;
 }
 .author{
 	font-weight: bold;
