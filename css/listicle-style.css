@@ -1,3 +1,89 @@
-/**
- TODO(you): Write the CSS necessary to complete HW1!
-*/
+header{
+	background-size: cover;
+	height: 500px;
+	background-image: linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url(../images/header.jpg);	
+	position: relative;
+  	text-align: center;
+}
+.centertitle{
+ 	font-family: 'Roboto Slab', serif;
+  	font-size: 36px;
+  	font-weight:normal;
+    color:white;
+    text-align: center;
+    width:780px;
+    position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.profile{
+	position:relative;
+	font-family:'Source Sans Pro',sans-serif;
+  	font-size:18px;
+  	color:rgb(51,51,51);
+  	line-height: 24px;
+  	text-align: center;
+}
+.profileimage{
+    border-radius: 50%;
+    height:100px;
+    margin-top:-50px;
+}
+.author{
+	font-weight: bold;
+}
+.prod{
+	font-size:18px;
+	font-style:italic;
+	border-bottom:2px solid #e6e6e6;
+	padding-bottom:10px;
+	display: inline-block;
+}
+.title{
+	font-family: 'Roboto Slab', serif;
+	font-size:36px;
+	font-weight:bold;
+	color:rgb(51,51,51);	
+}
+.content{
+	margin: 0px auto;
+    width: calc(66.67% + 40px);
+}
+ul{
+	margin: 0;
+}
+li{
+	list-style-type:none;
+    padding-top:    60px;
+	padding-bottom: 60px;
+}
+
+.number{
+	color:rgba(0,0,0,0.25);
+	display: inline-block;
+	width:40px;
+ 	margin-left:-80px;
+    padding-right:40px;
+    text-align:right;
+}
+a{
+	color:#42b4d6;
+	text-decoration: none;
+}
+a:hover{
+	 text-decoration: underline;
+}
+p{
+	margin:20px 0 20px 0;
+    font-family:'Source Sans Pro',sans-serif;
+    font-size:18px;
+	color:rgb(51, 51, 51);
+	line-height: 32px;
+}
+.contentimage{
+	width:100%;
+}
+body{
+	margin:0;
+}
